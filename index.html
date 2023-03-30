@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+      <meta charset="UTF-8">
+      <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <h1 id="title">Registration Form</h1>
+        <p id="description">Please fill out this form with the required information</p>
+          <form id="survey-form" action="https://register-demo.freecodecamp.org" method="POST">
+          <fieldset>
+            <label id="name-label"> Name: <input id="name" class="name" type="text" required="" placeholder="Enter your name"></input></label>
+            <label id="email-label">Email: <input id="email" class="email" type="email" required="" placeholder="Enter your email"></label>
+            <label id="number-label">Age: <input id="number" class="age" type="number" min="13" max='120' placeholder="Enter your age"></label>
+            </fieldset>
+            <fieldset>
+              <label>Which option describe your current role?
+                <select id="dropdown">
+                <option value="none">Select current role </option>
+                <option>Student</option>
+                <option>Full time job</option>
+                </select>
+                <label>
+                 Would you recommend freeCodeCamp to a friend?
+                <label><input type="radio" value="1" name="definetly-maybe-notsure"> Definitely</label>
+                <label><input type="radio" value="2" name="definetly-maybe-notsure"> Maybe</label>
+                <label><input type="radio" value="3" name="definetly-maybe-notsure">Not sure</label>
+                </label>
+              </fieldset>
+              <fieldset>
+<label>What is your favourite feature of freecodecamp?
+<select>
+  <option>Select an option</option>
+  <option>Challenges</option>
+  <option>Project</option>
+  <option>Community</option>
+  <option>Open Source</option>
+
+</select>
+<label>What would you like to see the improved? 
+  <label><input type="checkbox" value="frontend"> Front-end Projects</label>
+  <label><input type="checkbox" value="backend"> Back-end Projects</label>
+  <label><input type="checkbox" value="data"> Data Visualization</label>
+  <label><input type="checkbox" value="challenge"> Challenges</label>
+  <label><input type="checkbox" value="opensource"> Open Source Community</label>
+  <label><input type="checkbox" value="git"> Gitter help rooms</label>
+  <label><input type="checkbox" value="videos"> Videos</label>
+  </label>
+                </fieldset>
+             <fieldset>
+               <label>  
+              Any comments or suggestions?
+               <textarea placeholder="Bio"></textarea>
+               <input id ="submit" type="submit">
+               </label>
+              
+               </fieldset>
+          </form>
+          </main>
+          <footer>
+            </footer>
+      </body>
+  </html>
